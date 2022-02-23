@@ -1,13 +1,17 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
-const Header = () => {
+interface Scroll {
+  minScroll: number
+}
+
+const Header = ({ minScroll }: Scroll) => {
   const [show, handleShow] = useState(false)
 
   // background color change on scroll
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > minScroll) {
         handleShow(true)
       } else handleShow(false) // if not 100px down
     })
