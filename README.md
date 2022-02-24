@@ -1,27 +1,27 @@
-# Next.js + Tailwind CSS Example
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Medium_logo_Monogram.svg/1200px-Medium_logo_Monogram.svg.png" width="120" alt="Medium logo"> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_wordmark.png&f=1&nofb=1" width="250" alt="React.js logo">
+</br></br>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+👇 <em>Result here</em>👇 </br>
+https://medium-clone-six-ruddy.vercel.app/
 
-## Preview
+</br></br></br>
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+<h2>FRONTEND</h2></br>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript logo" width="130"> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com%2Fwp-content%2Fuploads%2F2020%2F08%2FJavaScript-Backend-Image-1.png&f=1&nofb=1" width="250" alt="React.js logo"></br></br></br></br></br>
 
-## Deploy your own
+<h2>BACKEND</h2></br>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+<img src="https://cdn.sanity.io/images/3do82whm/next/5e3ee25224e03062626b3748c0258d729b1dc756-1200x900.png?w=800&h=600&fit=clip&auto=format" width="150" alt="Sanity logo"> <img src="https://logovtor.com/wp-content/uploads/2020/10/vercel-inc-logo-vector.png" width="200" alt="Vercel logo"></br></br></br></br></br></br>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+<h2>Features</h2></br>
 
-## How to use
+👉 <em>React with Next JS</em></br>
+👉 <em>TypeScript</em></br>
+👉 <em>Tailwind CSS 3.0</em></br>
+👉 <em>SSR & ISR</em></br>
+👉 <em>Sanity</em> Backend</br>
+👉 <em>Sanity Studio</em> GROQ request</br>
+👉 <em>Vercel</em> hosting</br>
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+</br></br></br>
