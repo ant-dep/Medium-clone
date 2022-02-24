@@ -157,7 +157,7 @@ const Post = ({ post }: Props) => {
                 {...register('name', { required: true })}
                 className="form-input mt-1 block w-full rounded border py-2 px-3 shadow focus:outline-[#3f8dce] "
                 type="text"
-                placeholder="Shubh Porwal"
+                placeholder="John Doe"
               />
             </label>
             <label className="mb-5 block">
@@ -166,7 +166,7 @@ const Post = ({ post }: Props) => {
                 {...register('email', { required: true })}
                 className="form-input mt-1 block w-full rounded border py-2 px-3 shadow focus:outline-[#3f8dce] "
                 type="email"
-                placeholder="Shubh Porwal"
+                placeholder="johndoe@email.com"
               />
             </label>
             <label className="mb-5 block">
@@ -174,7 +174,7 @@ const Post = ({ post }: Props) => {
               <textarea
                 {...register('comment', { required: true })}
                 className="form-textarea mt-1 block w-full rounded border py-2 px-3 shadow focus:outline-[#3f8dce] "
-                placeholder="Shubh Porwal"
+                placeholder="Send some fire !"
                 rows={8}
               />
             </label>
