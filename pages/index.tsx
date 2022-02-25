@@ -13,6 +13,7 @@ interface Props {
 
 interface State {
   theme: string
+  page: string
 }
 
 export default function Home({ posts }: Props) {

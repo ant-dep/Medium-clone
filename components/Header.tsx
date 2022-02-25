@@ -29,11 +29,15 @@ const Header = ({ minScroll }: Scroll) => {
   return (
     <header
       className={`fixed left-0 top-0 flex w-full border-b border-black ${
-        theme === 'light' && show
-          ? 'bg-white'
-          : minScroll == 0
-          ? 'bg-black'
-          : show && 'bg-black'
+        minScroll === 0
+          ? // slug page
+            theme === 'light'
+            ? 'bg-white'
+            : 'bg-black'
+          : // home page
+          theme === 'dark'
+          ? show && 'bg-black'
+          : show && 'bg-white'
       }`}
     >
       <nav
