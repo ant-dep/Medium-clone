@@ -8,10 +8,15 @@ import { Post } from '../../typings'
 import PortableText from 'react-portable-text'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import toast, { Toaster } from 'react-hot-toast'
-import { type } from 'os'
+import Footer from '../../components/Footer'
+import { useSelector } from 'react-redux'
 
 interface Props {
   post: Post
+}
+
+interface State {
+  theme: string
 }
 interface IFormInput {
   _id: string
@@ -39,6 +44,8 @@ const successSubmit = () =>
 
 const Post = ({ post }: Props) => {
   const [submitted, setSubmitted] = useState(false)
+
+  const theme = useSelector((state: State) => state.theme)
 
   const {
     register,
@@ -70,9 +77,8 @@ const Post = ({ post }: Props) => {
         <title>{post.slug.current}</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <main>
-        <Header minScroll={0} />
-
+      <Header minScroll={0} />
+      <main className={`${theme === 'dark' && 'bg-black text-white'}`}>
         <img
           className="h-38 mt-20 w-full object-cover"
           src={urlFor(post.mainImage).url()!}
@@ -205,6 +211,7 @@ const Post = ({ post }: Props) => {
             </div>
           ))}
         </div>
+        <Footer />
       </main>
     </>
   )

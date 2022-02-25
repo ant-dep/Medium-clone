@@ -1,12 +1,18 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-
+import { useSelector } from 'react-redux'
+interface State {
+  theme?: string
+}
 interface Scroll {
   minScroll: number
 }
 
+// terneray : minScroll == à refers to slug page. show refers to scrolling event
+
 const Header = ({ minScroll }: Scroll) => {
   const [show, handleShow] = useState(false)
+  const theme = useSelector((state: State) => state.theme)
 
   // background color change on scroll
   useEffect(() => {
@@ -23,15 +29,29 @@ const Header = ({ minScroll }: Scroll) => {
   return (
     <header
       className={`fixed left-0 top-0 flex w-full border-b border-black ${
-        show && 'bg-white'
+        theme === 'light' && show
+          ? 'bg-white'
+          : minScroll == 0
+          ? 'bg-black'
+          : show && 'bg-black'
       }`}
     >
-      <nav className="mx-auto flex w-full max-w-7xl justify-between p-5">
+      <nav
+        className={`mx-auto flex w-full max-w-7xl justify-between p-5 ${
+          theme === 'dark' && (minScroll == 0 || show) && 'text-white'
+        }`}
+      >
         <div className="flex items-center space-x-5">
           <Link href="/">
             <img
               className="w-44 cursor-pointer object-contain"
-              src="/logo.png"
+              src={`${
+                theme === 'light'
+                  ? '/logo.png'
+                  : minScroll == 0 || show
+                  ? '/logo-white.png'
+                  : '/logo.png'
+              }`}
               alt=""
             />
           </Link>
@@ -47,7 +67,7 @@ const Header = ({ minScroll }: Scroll) => {
           <h3
             className={`rounded-full px-5 py-2 text-sm text-white transition duration-300 active:scale-90 ${
               show ? 'bg-green-600' : 'bg-black'
-            }`}
+            } ${minScroll == 0 && !show && 'border-white border'}`}
           >
             Get Started
           </h3>
